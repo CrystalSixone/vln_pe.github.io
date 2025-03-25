@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Rethinking the Embodied Gap in Vision-and-Language Navigation: A Holistic Study of Physical and Visual Disparities</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -52,21 +52,36 @@
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
+            <h1 class="title is-1 publication-title">Rethinking the Embodied Gap in Vision-and-Language Navigation: A Holistic Study of Physical and Visual Disparities</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
               <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+                <a href="https://crystalsixone.github.io/" target="_blank">Liuyi Wang</a><sup>1,2*</sup>,</span>
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
+                  <a href="https://crystalsixone.github.io/" target="_blank">Xinyuan Xia</a><sup>2,3*</sup>,</span>
                   <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
+                    <a href="https://crystalsixone.github.io/" target="_blank">Hui Zhao</a><sup>2</sup>,</span>
+                    <span class="author-block">
+                      <a href="https://crystalsixone.github.io/" target="_blank">Hanqing Wang</a><sup>+2</sup>,</span>
+                      <span class="author-block">
+                        <a href="https://crystalsixone.github.io/" target="_blank">Tai Wang</a><sup>2</sup>,</span>
+                        <span class="author-block">
+                          <a href="https://crystalsixone.github.io/" target="_blank">Yilun Chen</a><sup>2</sup>,</span>
+                          <span class="author-block">
+                            <a href="https://crystalsixone.github.io/" target="_blank">Chengju Liu</a><sup>1</sup>,</span>
+                            <span class="author-block">
+                              <a href="https://crystalsixone.github.io/" target="_blank">Qijun Chen</a><sup>+1</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://crystalsixone.github.io/" target="_blank">Jiangmiao Pang</a><sup>2</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Institution Name<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                    <span class="author-block">Tongji University</span>
+                    <span class="author-block">OpenRobotLab, Shanghai AI Laboratory</span>
+                    <span class="author-block">Shanghai Jiao Tong University</span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution</small></span>
+                    <span class="eql-cntrb"><small><br><sup>+</sup>Corresponding Author</small></span>
                   </div>
 
                   <div class="column has-text-centered">
@@ -83,7 +98,7 @@
                     </span>
 
                     <!-- Supplementary PDF link -->
-                    <span class="link-block">
+                    <!-- <span class="link-block">
                       <a href="static/pdfs/supplementary_material.pdf" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
@@ -91,7 +106,7 @@
                       </span>
                       <span>Supplementary</span>
                     </a>
-                  </span>
+                  </span> -->
 
                   <!-- Github link -->
                   <span class="link-block">
@@ -122,23 +137,18 @@
   </div>
 </section>
 
-
-<!-- Teaser video-->
+<!-- Teaser Image-->
 <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
+      <div class="hero-body">
+          <img src="static/images/fig1_overall.png" alt="An overview of our method"/>
+          <h2 class="subtitle has-text-centered">
+            We introduce VLN-PE, a realistic VLN platform and benchmark designed to enhance physical deployment across diverse robot embodiments. It enables cross-embodiment data collection, evaluation, and optimization under realistic locomotion and environmental conditions. Through systematic experiments on ego-centric VLN methods, we expose critical physical and visual disparities that challenge existing approaches and benchmarks. VLN-PE offers a grounded framework to foster more generalizable VLN models for future physical embodied AI development.
+          </h2>
+      </div>
   </div>
 </section>
-<!-- End teaser video -->
+<!-- End teaser Image -->
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -148,7 +158,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Recent Vision-and-Language Navigation (VLN) advancements are promising, but their idealized assumptions about robot movement and control fail to reflect physically embodied deployment challenges. To bridge this gap, we introduce VLN-PE, a physically realistic VLN platform supporting humanoid, quadruped, and wheeled robots. For the first time, we systematically evaluate several ego-centric VLN methods in physical robotic settings across different technical pipelines, including classification models for single-step discrete action prediction, a diffusion model for dense waypoint prediction, and a train-free, map-based large language model (LLM) integrated with path planning. Our results reveal significant performance degradation due to limited robot observation space, environmental lighting variations, and physical challenges like collisions and falls. This also exposes locomotion constraints for legged robots in complex environments. VLN-PE is highly extensible, allowing seamless integration of new scenes beyond MP3D, thereby enabling more comprehensive VLN evaluation. Despite the weak generalization of current models in physical deployment, VLN-PE provides a new pathway for improving cross-embodiment's overall adaptability. We hope our findings and tools inspire the community to rethink VLN limitations and advance robust, practical VLN models.
           </p>
         </div>
       </div>
@@ -156,6 +166,41 @@
   </div>
 </section>
 <!-- End paper abstract -->
+
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+      <div class="columns is-centered">
+          <div class="column is-full">
+              <div class="content">
+                  <div class="level-set has-text-justified">
+                      <p>
+                        In this paper, we introduce VLN-PE, a physically realistic VLN platform and benchmark that provides a comprehensive environment for cross-embodiment (humanoid, quadruped, and wheeled) data collection and systematic evaluation of policies across various robot embodiments and environmental conditions.
+                        Our experiments on VLN-PE reveal several critical insights that highlight limitations in current approaches and suggest promising directions for improvement:
+                      <ol>
+                          <li>
+                            <em>SoTA Models Struggle in Physical Environments</em>: Existing VLN-CE models exhibit a 34% SR relative drop when transferred to physical settings, revealing a gap between pseudo-motion training and physical deployment.
+                          </li>
+                          <li>
+                            <em>Cross-embodiment Sensitivity</em>: Model performance varies across different robots, primarily due to viewpoint height differences, highlighting the need for height-adaptive or perspective-invariant representations.
+                          </li>
+                          <li>
+                            <em>Multi-Modal Robustness</em>: RGB-only models degrade significantly in low-light conditions, whereas RGB + depth models perform more reliably, underscoring the value of multi-modal fusion to improve the model's robustness.
+                          </li>
+                          <li>
+                            <em>Limited Generalization of Standard Datasets</em>: MP3D-style datasets cannot fully capture environment shifts. A simple baseline with 6M trainable parameters, fine-tuned on our small-scale dataset of the newly introduced scenes, outperforms previous SoTA method in zero-shot settings, suggesting the importance of more diverse training distributions and comprehensive evaluation system.
+                          </li>
+                          <li>
+                            <em>Towards Cross-Embodiment VLN</em>: In our experiments, co-training across different robots enables a single baseline to generalize across embodiments and achieve the SoTA result, showing an important foundation for the future unified cross-embodiment VLN model.
+                          </li>
+                      </ol>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  </div>
+</section>
 
 
 <!-- Image carousel -->
@@ -165,120 +210,123 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel1.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/fig3_exp1.png" alt="A table comparing the performance of different VLN models on VLN-PE in MP3D environments."/>
         <h2 class="subtitle has-text-centered">
-          First image description.
+          Models transferred directly from VLN-CE to VLN-PE experience significant performance drops. Generally, the fine-tuned large video model NaVid exhibits better generalization compared to smaller models. Additionally, as a zero-shot, map-based LLM solution, VLMaps also demonstrates reasonable results in the VLN-PE setting.
+          <br><br>
+          Interestingly, fine-tuning Seq2Seq and CMA (denoted as Seq2Seq+ and CMA+) with their SoTA weights using the training dataset from VLN-PE significantly improves performance. In particular, CMA+ (#11) surpasses NaVid's zero shot performance, achieving SR 28.72 vs. 21.58 and SPL 24.24 vs. 17.45 on val-seen.
+          <br><br>
+          These results indicate that existing VLN models tend to overfit to specific simulation platforms, resulting in poor generalization when directly transferred to new environments or settings. However, incorporating diverse domain data can further enhance overall navigation performance.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="MY ALT TEXT"/>
+        <img src="static/images/fig_crossEmbodiment_effect.png" alt="Two tables comparing the performance of models across different robot embodiments."/>
         <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="MY ALT TEXT"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
+        The figure on the left evaluates NaVid's zero-shot performance on different robot types, revealing varying degrees of performance degradation. A key advantage of VLN-PE is its ability to seamlessly support diverse robot models for navigation and data collection. This raises our interest: <i>Can cross-robot data improve model training, enabling a unified model that generalizes across different robot embodiments?</i> To explore this, we collected R2R data from humanoid, quadrupedal, and wheeled robots within VLN-PE.
+        <br><br>
+        The figure on the right shows the cross-embodiment training significantly enhances overall performance and enables a "One-for-All" model. As indicated by the bolded results, models trained using a combination of data from all three robot types consistently achieve the best performance.
        </h2>
      </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="MY ALT TEXT"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
   </div>
 </div>
 </div>
 </section>
 <!-- End image carousel -->
 
+<!-- RDP -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+      <div class="columns is-centered">
+          <div class="column is-full">
+              <div class="content">
+                  <div class="level-set has-text-justified">
+                      <p>
+                        We introduce <code>RDP</code>, the first diffusion-based attempt in VLN, as a new baseline method, using the diffusion generative head to support multistep continuous prediction. On the out-of-mp3d-domain datasets GRU-VLN10 and 3DGS-Lab-VLN, the fine-tuned RDP achieves the SoTA results on both the seen and unseen environments.
+                      </p>
+                  </div>
+              </div>
 
-
-
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          
-          <div class="publication-video">
-            <!-- Youtube embed code here -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
-        </div>
       </div>
-    </div>
   </div>
 </section>
-<!-- End youtube video -->
 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+      <div class="hero-body">
+          <img src="static/images/fig4_exp2.png" alt="Main results on the GRU-VLN10 dataset."/>
+      </div>
+  </div>
+</section>
+<!-- End RDP -->
 
-<!-- Video carousel -->
+<!-- More Visualized Results -->
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+      <div class="columns is-centered">
+          <div class="column is-full">
+              <div class="content">
+                  <div class="level-set has-text-justified">
+                      <p>
+                        Below, we provide more visualized results on the VLN-PE simulator.
+                      </p>
+                  </div>
+              </div>
+
+          </div>
+      </div>
+  </div>
+</section>
+<!-- Image carousel -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
       <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="100%">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4"
-            type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="100%">\
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4"
-            type="video/mp4">
-          </video>
-        </div>
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/fig7_h1_example.png" alt="A figure showing the humanoid robot's navigation in the VLN-PE simulator."/>
+        <h2 class="subtitle has-text-centered">
+          Visualization of the humanoid robot walking in VLN-PE. Leveraging the powerful interactive capabilities of Isaac Sim, researchers can easily observe robot motion from various perspectives within the environment.
+        </h2>
       </div>
-    </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/fig9_vlmaps.png" alt="A figure showing the improved VLMaps in VLN-PE."/>
+        <h2 class="subtitle has-text-centered">
+          Example of improved VLMaps. Blue dot: current position (black line: orientation). Green dot: frontiers (black line: exploration orientation). White: dilated obstacles. Light gray: explored area. Dark gray: unexplored area. Blue line: local planner trajectory.
+       </h2>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/fig11_grutopia_vln10.png" alt="A figure showing the GRU-VLN10 datasets."/>
+      <h2 class="subtitle has-text-centered">
+        Examples of trajectories and instructions from our introduced GRU-VLN10 datasets.
+     </h2>
+   </div>
+   <div class="item">
+    <!-- Your image here -->
+    <img src="static/images/fig12_3dgs_lab.png" alt="A figure showing the 3DGS-Lab-VLN datasets."/>
+    <h2 class="subtitle has-text-centered">
+      Examples of trajectories and instructions from our introduced 3DGS-Lab-VLN datasets.
+   </h2>
+ </div>
   </div>
+</div>
+</div>
 </section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
+<!-- End image carousel -->
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>BibTex Code Here</code></pre>
+      <pre><code>@article{wang2025rethinking,
+        title={Rethinking the Embodied Gap in Vision-and-Language Navigation: A Holistic Study of Physical and Visual Disparities},
+        author={Wang, Liuyi and Xia, Xinyuan and Zhao, Hui and Wang, Hanqing and Wang, Tai and Chen, Yilun and Liu, Chengju and Chen, Qijun and Pang, Jiangmiao},
+        journal={arXiv preprint arXiv:2503.14390},
+        year={2025}
+      }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
@@ -291,7 +339,7 @@
         <div class="content">
 
           <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
             You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
             Commons Attribution-ShareAlike 4.0 International License</a>.
           </p>
