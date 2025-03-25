@@ -4,23 +4,23 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DESCRIPTION META TAG">
-  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
-  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
-  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <meta name="description" content="We propose a physically realistic VLN platform and benchmark to bridge the embodied gap in Vision-and-Language Navigation.">
+  <meta property="og:title" content="Rethinking the Embodied Gap in Vision-and-Language Navigation: A Holistic Study of Physical and Visual Disparities"/>
+  <meta property="og:description" content="We propose a physically realistic VLN platform and benchmark to bridge the embodied gap in Vision-and-Language Navigation."/>
+  <meta property="og:url" content="https://vln-pe.github.io"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image" content="static/images/fig1_overall.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
-  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <meta name="twitter:title" content="Rethinking the Embodied Gap in Vision-and-Language Navigation: A Holistic Study of Physical and Visual Disparities">
+  <meta name="twitter:description" content="We propose a physically realistic VLN platform and benchmark to bridge the embodied gap in Vision-and-Language Navigation.">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
-  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:image" content="static/images/fig1_overall.png">
   <meta name="twitter:card" content="summary_large_image">
   <!-- Keywords for your paper to be indexed by-->
-  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="keywords" content="Vision-and-Language Navigation, Physical Embodiment, Benchmark, Robot Navigation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
@@ -60,26 +60,26 @@
                 <span class="author-block">
                   <a href="https://crystalsixone.github.io/" target="_blank">Xinyuan Xia</a><sup>2,3*</sup>,</span>
                   <span class="author-block">
-                    <a href="https://crystalsixone.github.io/" target="_blank">Hui Zhao</a><sup>2</sup>,</span>
+                    <a target="_blank">Hui Zhao</a><sup>2</sup>,</span>
                     <span class="author-block">
-                      <a href="https://crystalsixone.github.io/" target="_blank">Hanqing Wang</a><sup>+2</sup>,</span>
+                      <a href="https://hanqingwangai.github.io/" target="_blank">Hanqing Wang</a><sup>+2</sup>,</span>
                       <span class="author-block">
-                        <a href="https://crystalsixone.github.io/" target="_blank">Tai Wang</a><sup>2</sup>,</span>
+                        <a href="https://tai-wang.github.io/" target="_blank">Tai Wang</a><sup>2</sup>,</span>
                         <span class="author-block">
-                          <a href="https://crystalsixone.github.io/" target="_blank">Yilun Chen</a><sup>2</sup>,</span>
+                          <a href="https://yilunchen.com/about/" target="_blank">Yilun Chen</a><sup>2</sup>,</span>
                           <span class="author-block">
-                            <a href="https://crystalsixone.github.io/" target="_blank">Chengju Liu</a><sup>1</sup>,</span>
+                            <a href="https://ieeexplore.ieee.org/author/37677379800" target="_blank">Chengju Liu</a><sup>1</sup>,</span>
                             <span class="author-block">
-                              <a href="https://crystalsixone.github.io/" target="_blank">Qijun Chen</a><sup>+1</sup>,</span>
+                              <a href="https://ieeexplore.ieee.org/author/37276133600" target="_blank">Qijun Chen</a><sup>+1</sup>,</span>
                   <span class="author-block">
-                    <a href="https://crystalsixone.github.io/" target="_blank">Jiangmiao Pang</a><sup>2</sup>
+                    <a href="https://oceanpang.github.io/" target="_blank">Jiangmiao Pang</a><sup>2</sup>
                   </span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Tongji University</span>
-                    <span class="author-block">OpenRobotLab, Shanghai AI Laboratory</span>
-                    <span class="author-block">Shanghai Jiao Tong University</span>
+                    <span class="author-block"><sup>1</sup>Tongji University, </span>
+                    <span class="author-block"><sup>2</sup>OpenRobotLab, Shanghai AI Laboratory, </span>
+                    <span class="author-block"><sup>3</sup>Shanghai Jiao Tong University</span>
                     <span class="eql-cntrb"><small><br><sup>*</sup>Equal Contribution</small></span>
                     <span class="eql-cntrb"><small><br><sup>+</sup>Corresponding Author</small></span>
                   </div>
@@ -142,7 +142,7 @@
   <div class="container is-max-desktop">
       <div class="hero-body">
           <img src="static/images/fig1_overall.png" alt="An overview of our method"/>
-          <h2 class="subtitle has-text-centered">
+          <h2 class="subtitle has-text-left">
             We introduce VLN-PE, a realistic VLN platform and benchmark designed to enhance physical deployment across diverse robot embodiments. It enables cross-embodiment data collection, evaluation, and optimization under realistic locomotion and environmental conditions. Through systematic experiments on ego-centric VLN methods, we expose critical physical and visual disparities that challenge existing approaches and benchmarks. VLN-PE offers a grounded framework to foster more generalizable VLN models for future physical embodied AI development.
           </h2>
       </div>
@@ -210,8 +210,10 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/fig3_exp1.png" alt="A table comparing the performance of different VLN models on VLN-PE in MP3D environments."/>
-        <h2 class="subtitle has-text-centered">
+        <img src="static/images/fig3_exp1.png" 
+             alt="A table comparing the performance of different VLN models on VLN-PE in MP3D environments."
+             style="width: 80%; max-width: 800px; margin: auto; display: block;"/>
+        <h2 class="subtitle has-text-left">
           Models transferred directly from VLN-CE to VLN-PE experience significant performance drops. Generally, the fine-tuned large video model NaVid exhibits better generalization compared to smaller models. Additionally, as a zero-shot, map-based LLM solution, VLMaps also demonstrates reasonable results in the VLN-PE setting.
           <br><br>
           Interestingly, fine-tuning Seq2Seq and CMA (denoted as Seq2Seq+ and CMA+) with their SoTA weights using the training dataset from VLN-PE significantly improves performance. In particular, CMA+ (#11) surpasses NaVid's zero shot performance, achieving SR 28.72 vs. 21.58 and SPL 24.24 vs. 17.45 on val-seen.
@@ -221,8 +223,10 @@
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/fig_crossEmbodiment_effect.png" alt="Two tables comparing the performance of models across different robot embodiments."/>
-        <h2 class="subtitle has-text-centered">
+        <img src="static/images/fig_crossEmbodiment_effect.png" 
+             alt="Two tables comparing the performance of models across different robot embodiments."
+             style="width: 80%; max-width: 800px; margin: auto; display: block;"/>
+        <h2 class="subtitle has-text-left">
         The figure on the left evaluates NaVid's zero-shot performance on different robot types, revealing varying degrees of performance degradation. A key advantage of VLN-PE is its ability to seamlessly support diverse robot models for navigation and data collection. This raises our interest: <i>Can cross-robot data improve model training, enabling a unified model that generalizes across different robot embodiments?</i> To explore this, we collected R2R data from humanoid, quadrupedal, and wheeled robots within VLN-PE.
         <br><br>
         The figure on the right shows the cross-embodiment training significantly enhances overall performance and enables a "One-for-All" model. As indicated by the bolded results, models trained using a combination of data from all three robot types consistently achieve the best performance.
@@ -242,7 +246,7 @@
               <div class="content">
                   <div class="level-set has-text-justified">
                       <p>
-                        We introduce <code>RDP</code>, the first diffusion-based attempt in VLN, as a new baseline method, using the diffusion generative head to support multistep continuous prediction. On the out-of-mp3d-domain datasets GRU-VLN10 and 3DGS-Lab-VLN, the fine-tuned RDP achieves the SoTA results on both the seen and unseen environments.
+                        We introduce RDP, the first diffusion-based attempt in VLN, as a new baseline method, using the diffusion generative head to support multistep continuous prediction. On the out-of-mp3d-domain datasets GRU-VLN10 and 3DGS-Lab-VLN, the fine-tuned RDP achieves the SoTA results on both the seen and unseen environments.
                       </p>
                   </div>
               </div>
@@ -255,6 +259,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
       <div class="hero-body">
+          <img src="static/images/fig_RDP.png" alt="The structure of RDP."/>
           <img src="static/images/fig4_exp2.png" alt="Main results on the GRU-VLN10 dataset."/>
       </div>
   </div>
@@ -285,28 +290,36 @@
       <div id="results-carousel" class="carousel results-carousel">
        <div class="item">
         <!-- Your image here -->
-        <img src="static/images/fig7_h1_example.png" alt="A figure showing the humanoid robot's navigation in the VLN-PE simulator."/>
-        <h2 class="subtitle has-text-centered">
+        <img src="static/images/fig7_h1_example.png" 
+             alt="A figure showing the humanoid robot's navigation in the VLN-PE simulator."
+             style="width: 80%; max-width: 800px; margin: auto; display: block;"/>
+        <h2 class="subtitle has-text-left">
           Visualization of the humanoid robot walking in VLN-PE. Leveraging the powerful interactive capabilities of Isaac Sim, researchers can easily observe robot motion from various perspectives within the environment.
         </h2>
       </div>
       <div class="item">
         <!-- Your image here -->
-        <img src="static/images/fig9_vlmaps.png" alt="A figure showing the improved VLMaps in VLN-PE."/>
-        <h2 class="subtitle has-text-centered">
+        <img src="static/images/fig9_vlmaps.png" 
+             alt="A figure showing the improved VLMaps in VLN-PE."
+             style="width: 80%; max-width: 800px; margin: auto; display: block;"/>
+        <h2 class="subtitle has-text-left">
           Example of improved VLMaps. Blue dot: current position (black line: orientation). Green dot: frontiers (black line: exploration orientation). White: dilated obstacles. Light gray: explored area. Dark gray: unexplored area. Blue line: local planner trajectory.
        </h2>
      </div>
      <div class="item">
       <!-- Your image here -->
-      <img src="static/images/fig11_grutopia_vln10.png" alt="A figure showing the GRU-VLN10 datasets."/>
+      <img src="static/images/fig11_grutopia_vln10.png" 
+           alt="A figure showing the GRU-VLN10 datasets."
+           style="width: 80%; max-width: 800px; margin: auto; display: block;"/>
       <h2 class="subtitle has-text-centered">
         Examples of trajectories and instructions from our introduced GRU-VLN10 datasets.
      </h2>
    </div>
    <div class="item">
     <!-- Your image here -->
-    <img src="static/images/fig12_3dgs_lab.png" alt="A figure showing the 3DGS-Lab-VLN datasets."/>
+    <img src="static/images/fig12_3dgs_lab.png" 
+         alt="A figure showing the 3DGS-Lab-VLN datasets."
+         style="width: 80%; max-width: 800px; margin: auto; display: block;"/>
     <h2 class="subtitle has-text-centered">
       Examples of trajectories and instructions from our introduced 3DGS-Lab-VLN datasets.
    </h2>
