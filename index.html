@@ -203,69 +203,6 @@
 </section>
 
 
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/fig3_exp1.png" 
-             alt="A table comparing the performance of different VLN models on VLN-PE in MP3D environments."
-             style="width: 80%; max-width: 800px; margin: auto; display: block;"/>
-        <h2 class="subtitle has-text-left">
-          Models transferred directly from VLN-CE to VLN-PE experience significant performance drops. Generally, the fine-tuned large video model NaVid exhibits better generalization compared to smaller models. Additionally, as a zero-shot, map-based LLM solution, VLMaps also demonstrates reasonable results in the VLN-PE setting.
-          <br><br>
-          Interestingly, fine-tuning Seq2Seq and CMA (denoted as Seq2Seq+ and CMA+) with their SoTA weights using the training dataset from VLN-PE significantly improves performance. In particular, CMA+ (#11) surpasses NaVid's zero shot performance, achieving SR 28.72 vs. 21.58 and SPL 24.24 vs. 17.45 on val-seen.
-          <br><br>
-          These results indicate that existing VLN models tend to overfit to specific simulation platforms, resulting in poor generalization when directly transferred to new environments or settings. However, incorporating diverse domain data can further enhance overall navigation performance.
-        </h2>
-      </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/fig_crossEmbodiment_effect.png" 
-             alt="Two tables comparing the performance of models across different robot embodiments."
-             style="width: 80%; max-width: 800px; margin: auto; display: block;"/>
-        <h2 class="subtitle has-text-left">
-        The figure on the left evaluates NaVid's zero-shot performance on different robot types, revealing varying degrees of performance degradation. A key advantage of VLN-PE is its ability to seamlessly support diverse robot models for navigation and data collection. This raises our interest: <i>Can cross-robot data improve model training, enabling a unified model that generalizes across different robot embodiments?</i> To explore this, we collected R2R data from humanoid, quadrupedal, and wheeled robots within VLN-PE.
-        <br><br>
-        The figure on the right shows the cross-embodiment training significantly enhances overall performance and enables a "One-for-All" model. As indicated by the bolded results, models trained using a combination of data from all three robot types consistently achieve the best performance.
-       </h2>
-     </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
-
-<!-- RDP -->
-<section class="section hero is-small">
-  <div class="container is-max-desktop">
-      <div class="columns is-centered">
-          <div class="column is-full">
-              <div class="content">
-                  <div class="level-set has-text-justified">
-                      <p>
-                        We introduce RDP, the first diffusion-based attempt in VLN, as a new baseline method, using the diffusion generative head to support multistep continuous prediction. On the out-of-mp3d-domain datasets GRU-VLN10 and 3DGS-Lab-VLN, the fine-tuned RDP achieves the SoTA results on both the seen and unseen environments.
-                      </p>
-                  </div>
-              </div>
-
-          </div>
-      </div>
-  </div>
-</section>
-
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-      <div class="hero-body">
-          <img src="static/images/fig_RDP.png" alt="The structure of RDP." style="width: 60%; max-width: 600px; margin: auto; display: block;"/>
-          <img src="static/images/fig4_exp2.png" alt="Main results on the GRU-VLN10 dataset."/>
-      </div>
-  </div>
-</section>
-<!-- End RDP -->
-
 <!-- More Visualized Results -->
 <section class="section hero is-small">
   <div class="container is-max-desktop">
@@ -274,7 +211,7 @@
               <div class="content">
                   <div class="level-set has-text-justified">
                       <p>
-                        Below, we provide more visualized results on the VLN-PE simulator.
+                        Below, we provide some visualized results on the VLN-PE simulator.
                       </p>
                   </div>
               </div>
@@ -284,57 +221,63 @@
   </div>
 </section>
 
-<!-- Video carousel -->
+<!-- Video grid -->
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <!-- <h2 class="title is-3">Video Carousel</h2> -->
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <video poster="" id="video1" autoplay controls muted loop height="50%" width="50%" style="display: block; margin: 0 auto;">
-            <!-- Your video file here -->
-            <source src="static/videos/video_multi_views.mp4"
-            type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            Visualization of the different viewpoints of the robots walking in VLN-PE.
-          </h2>
+      <div class="columns is-multiline">
+        <!-- Video 1 -->
+        <div class="column is-6">
+          <div class="video-container">
+            <video poster="" id="video1" autoplay controls muted loop style="width: 100%;">
+              <source src="static/videos/video_multiViewPoints_16_9.mp4" type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered is-size-6">
+              Different viewpoints of the robots walking in VLN-PE.
+            </h2>
+          </div>
         </div>
-        <div class="item item-video2">
-          <video poster="" id="video2" autoplay controls muted loop height="50%" width="50%" style="display: block; margin: 0 auto;">
-            <!-- Your video file here -->
-            <source src="static/videos/video_grutopia_vln10.mp4"
-            type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            Visualization of trajectories and instructions from the GRU-VLN10 dataset.
-          </h2>
+        
+        <!-- Video 2 -->
+        <div class="column is-6">
+          <div class="video-container">
+            <video poster="" id="video2" autoplay controls muted loop style="width: 100%;">
+              <source src="static/videos/video_grutopia_vln10.mp4" type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered is-size-6">
+              Trajectories and instructions from the GRU-VLN10 dataset.
+            </h2>
+          </div>
         </div>
-        <div class="item item-video3">
-          <video poster="" id="video3" autoplay controls muted loop height="50%" width="50%" style="display: block; margin: 0 auto;">
-            <!-- Your video file here -->
-            <source src="static/videos/video_3dgs_lab.mp4"
-            type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            Visualization of trajectories and instructions from the 3DGS-Lab-VLN dataset.
-          </h2>
+        
+        <!-- Video 3 -->
+        <div class="column is-6">
+          <div class="video-container">
+            <video poster="" id="video3" autoplay controls muted loop style="width: 100%;">
+              <source src="static/videos/video_3dgs_lab.mp4" type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered is-size-6">
+              Trajectories and instructions from the 3DGS-Lab-VLN dataset.
+            </h2>
+          </div>
         </div>
-        <div class="item item-video4">
-          <video poster="" id="video4" autoplay controls muted loop height="50%" width="50%" style="display: block; margin: 0 auto;">
-            <!-- Your video file here -->
-            <source src="static/videos/video_light_comparison.mp4"
-            type="video/mp4">
-          </video>
-          <h2 class="subtitle has-text-centered">
-            Visualization of the comparison of different lighting conditions.
-          </h2>
+        
+        <!-- Video 4 -->
+        <div class="column is-6">
+          <div class="video-container">
+            <video poster="" id="video4" autoplay controls muted loop style="width: 100%;">
+              <source src="static/videos/video_light_comparison.mp4" type="video/mp4">
+            </video>
+            <h2 class="subtitle has-text-centered is-size-6">
+              Comparisons of different lighting conditions.
+            </h2>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- End video carousel -->
+<!-- End video grid -->
 
 <!-- Image carousel -->
 <section class="hero is-small">
@@ -346,7 +289,7 @@
         <img src="static/images/fig7_h1_example.png" 
              alt="A figure showing the humanoid robot's navigation in the VLN-PE simulator."
              style="width: 80%; max-width: 800px; margin: auto; display: block;"/>
-        <h2 class="subtitle has-text-left">
+        <h2 class="subtitle has-text-left is-size-6">
           Visualization of the humanoid robot walking in VLN-PE. Leveraging the powerful interactive capabilities of Isaac Sim, researchers can easily observe robot motion from various perspectives within the environment.
         </h2>
       </div>
@@ -355,7 +298,7 @@
         <img src="static/images/fig9_vlmaps.png" 
              alt="A figure showing the improved VLMaps in VLN-PE."
              style="width: 80%; max-width: 800px; margin: auto; display: block;"/>
-        <h2 class="subtitle has-text-left">
+        <h2 class="subtitle has-text-left is-size-6">
           Example of improved VLMaps. Blue dot: current position (black line: orientation). Green dot: frontiers (black line: exploration orientation). White: dilated obstacles. Light gray: explored area. Dark gray: unexplored area. Blue line: local planner trajectory.
        </h2>
      </div>
@@ -364,7 +307,7 @@
       <img src="static/images/fig11_grutopia_vln10.png" 
            alt="A figure showing the GRU-VLN10 datasets."
            style="width: 80%; max-width: 800px; margin: auto; display: block;"/>
-      <h2 class="subtitle has-text-centered">
+      <h2 class="subtitle has-text-centered is-size-6">
         Examples of trajectories and instructions from our introduced GRU-VLN10 datasets.
      </h2>
    </div>
@@ -373,7 +316,7 @@
     <img src="static/images/fig12_3dgs_lab.png" 
          alt="A figure showing the 3DGS-Lab-VLN datasets."
          style="width: 80%; max-width: 800px; margin: auto; display: block;"/>
-    <h2 class="subtitle has-text-centered">
+    <h2 class="subtitle has-text-centered is-size-6">
       Examples of trajectories and instructions from our introduced 3DGS-Lab-VLN datasets.
    </h2>
  </div>
@@ -382,6 +325,70 @@
 </div>
 </section>
 <!-- End image carousel -->
+
+<section class="section hero is-small">
+  <div class="container is-max-desktop">
+      <div class="columns is-centered">
+          <div class="column is-full">
+              <div class="content">
+                  <div class="level-set has-text-justified">
+                      <p>
+                        Based on the VLN-PE simulator, we conduct several experiments to evaluate the performance of different VLN models.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/fig3_exp1.png" 
+             alt="A table comparing the performance of different VLN models on VLN-PE in MP3D environments."
+             style="width: 80%; max-width: 800px; margin: auto; display: block;"/>
+        <h2 class="subtitle has-text-left is-size-6">
+          Models transferred directly from VLN-CE to VLN-PE experience significant performance drops. Generally, the fine-tuned large video model NaVid exhibits better generalization compared to smaller models. Additionally, as a zero-shot, map-based LLM solution, VLMaps also demonstrates reasonable results in the VLN-PE setting.
+          <br><br>
+          Interestingly, fine-tuning the small models CMA (denoted as CMA+) with their SoTA weights (only 6M trainable parameters) using the training dataset from VLN-PE significantly improves performance. In particular, CMA+ (#11) surpasses NaVid's zero shot performance, achieving SR 28.72 vs. 21.58 and SPL 24.24 vs. 17.45 on val-seen.
+          <br><br>
+          These results indicate that existing VLN models tend to overfit to specific simulation platforms, resulting in poor generalization when directly transferred to new environments or settings. However, incorporating diverse domain data can further enhance overall navigation performance.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/fig_crossEmbodiment_effect.png" 
+             alt="Two tables comparing the performance of models across different robot embodiments."
+             style="width: 80%; max-width: 800px; margin: auto; display: block;"/>
+        <h2 class="subtitle has-text-left is-size-6">
+        The figure on the left evaluates NaVid's zero-shot performance on different robot types, revealing varying degrees of performance degradation. A key advantage of VLN-PE is its ability to seamlessly support diverse robot models for navigation and data collection. This raises our interest: <i>Can cross-robot data improve model training, enabling a unified model that generalizes across different robot embodiments?</i> To explore this, we collected R2R data from humanoid, quadrupedal, and wheeled robots within VLN-PE.
+        <br><br>
+        The figure on the right shows the cross-embodiment training significantly enhances overall performance and enables a "One-for-All" model. As indicated by the bolded results, models trained using a combination of data from all three robot types consistently achieve the best performance.
+       </h2>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/fig_RDP.png" 
+           alt="The structure of RDP."
+           style="width: 40%; max-width: 400px; margin: auto; display: block;"/>
+      <img src="static/images/fig4_exp2.png" 
+           alt="The results of RDP on the GRU-VLN10 dataset."
+           style="width: 80%; max-width: 800px; margin: auto; display: block;"/>
+      <h2 class="subtitle has-text-left is-size-6">
+        Furthermore, we introduce RDP, the first diffusion-based attempt in VLN, as a new baseline method, using the diffusion generative head to support multistep continuous prediction. On the out-of-mp3d-domain datasets GRU-VLN10 and 3DGS-Lab-VLN, the fine-tuned RDP achieves the SoTA results on both the seen and unseen environments.
+     </h2>
+   </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
